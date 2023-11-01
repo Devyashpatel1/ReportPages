@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report for Identify</title>
+<link
+	href="2023-10-31-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2023-10-31-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2023-10-31-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report for Identify</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2023-10-31-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Tue 31 Oct 2023, at 15:41:29</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">High</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://api.xero.com</span></li>
+						<li><span class="site">https://identity.xero.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						<span>None</span>
+						
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%">
+						<col style="width: 11.666666666666666%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="6">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">False Positive</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(54.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(54.5%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="2">Site</th>
+							<th scope="row">https://api.xero.com</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://identity.xero.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(9)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">SQL Injection - SQLite</a></th>
+							<td class="risk-level">High</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>23</span><br> <span
+								class="additional-info-percentages">(209.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Cookie Without Secure Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>24</span><br> <span
+								class="additional-info-percentages">(218.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>22</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Timestamp Disclosure - Unix</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>20</span><br> <span
+								class="additional-info-percentages">(181.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>42</span><br> <span
+								class="additional-info-percentages">(381.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>20</span><br> <span
+								class="additional-info-percentages">(181.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>261</span><br> <span
+								class="additional-info-percentages">(2,372.7%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>11</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">High</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://api.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">SQL Injection - SQLite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://api.xero.com/api.xro/2.0/contacts</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [359] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [755] milliseconds, when the original unmodified query with value [Test Account YP] took [313] milliseconds.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details>
+				<summary>Request line and header section (3307 bytes)</summary>
+				
+				<pre><code>POST https://api.xero.com/api.xro/2.0/contacts HTTP/1.1
+xero-tenant-id: f0fa46f6-5752-46ee-a06a-86bc8cd757fe
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MzI3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5ODczNDAxNSwieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjMwN2Q1NjY5YzIwYTQ3ZDE4NWVmNDIxODU2YTEzMDc0Iiwic2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJqdGkiOiJDQzRDOUEwMTNCMDQ3M0Y5RUYxNTg5MjZCM0ZGOEY3RiIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiMTdmZWJkMDctNDEwMC00YjJmLTg3MjUtNDJjNmFkZGVhM2I5Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.o18l1yd29E39dHhHMULkdhy1JPb3UJTMy5mP39skUgT6dLMykKNBo72JvCL4v8mt6YoI2Zn5luOkMHkgcsrn423uv70VUm5kb7G68yo1h1SEp6OMavuND0pOQHeA2wm40Fh359E4gwzjYOr61DIuiEgZm_fTfYCcFC8ol252h0v739t1gxUXKIwcsjC4y__J9tq3YkeG5v3j4xKG2cAn_nQHJ5VrmSgKl40VJhOZ9HvnPABxXhb3iiWVtZXlmIG2BZBCASNQN6YTruK_W_u9ArHmG-PgdhtsuGFKgpTdzDyt5cwP6mB1pSRT2kMwZ3dSL3Ae10B7oORlKgnTchCD9g
+User-Agent: PostmanRuntime/7.34.0
+Postman-Token: f69df088-8f91-4309-90c1-d179a444cc2d
+Host: api.xero.com
+Connection: keep-alive
+Content-Length: 889
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQPzZ8aGQg22uLAQAADBvkhBXR+/lPnb/t8qtC9W2Qa7opXT4+4TFXDJ5EnQVfpQ95osTfvgsaIhhkGDLO+kl5DItgtFeq+///bjb+Nc5sW4d+lP+Cyykwlj5BsiozuhTneIgpIxoSWYxuEYJSng20c8VkbXYB1ePNy/dLWg1HSq3dS0Ky8iFwdIl8zPVftqjWda3A3y3blYux/NJkyajw92JukPvjGEs2+3v4BmGOfkboWRfxkipheKmyO0Q=~1; bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (889 bytes)</summary>
+				
+				<pre><code>{
+    &quot;Contacts&quot;: [
+        {
+            &quot;Name&quot;: &quot;case randomblob(100000) when not null then 1 else 1 end &quot;,
+            &quot;FirstName&quot;: &quot;Test &quot;,
+            &quot;LastName&quot;: &quot;Contact &quot;,
+            &quot;EmailAddress&quot;: &quot;yash.p@kandisatech.com &quot;,
+            &quot;Addresses&quot;: [
+                {
+                    &quot;AddressType&quot;: &quot;POBOX&quot;,
+                    &quot;AddressLine1&quot;: &quot;test 123&quot;,
+                    &quot;City&quot;: &quot;mum&quot;,
+                    &quot;Region&quot;: &quot;mh&quot;,
+                    &quot;PostalCode&quot;: &quot;852963&quot;,
+                    &quot;Country&quot;: &quot;in&quot;
+                },
+                {
+                    &quot;AddressType&quot;: &quot;DELIVERY&quot;,
+                    &quot;AddressLine1&quot;: &quot;east code&quot;,
+                    &quot;City&quot;: &quot;mumbai&quot;,
+                    &quot;Region&quot;: &quot;mh&quot;,
+                    &quot;PostalCode&quot;: &quot;400090&quot;,
+                    &quot;Country&quot;: &quot;contr&quot;
+                }
+            ]
+        }
+    ]
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (786 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Content-Length: 177
+Server: nginx
+WWW-Authenticate: Bearer error=invalid_token
+Xero-Correlation-Id: 07945af1-92e9-45d7-9b7f-91949c3bc583
+Expires: Tue, 31 Oct 2023 09:25:55 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 09:25:55 GMT
+Connection: close
+X-Client-TLS-ver: tls1.3
+Set-Cookie: bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQ5f3UFwJLZ2uLAQAACckNhRXPlulYz30nEPd8/lDIT2HnDyzpWg2IVKQh/Ar2YEQE2lX6mTrmUn4EBZoUrjgZnQbb5r6L9WFe3G6pql3pcA4Vtoc6QsnG0pBy3gCdkUOuXZ6DTtAQl5nG8+nUFbF94Gp8OjJhv88vmoIPVxlABUwXOu5hHGwOk2vCWdTEECPZHaLQwF5zi6bobbKwf+QQeZD6BZz0UahVjFQVQx/ql4ZRXwdpU2h7UsBucwU=~1; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:58 GMT; Max-Age=4323; Secure
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (177 bytes)</summary>
+				
+				<pre><code>{&quot;Type&quot;:null,&quot;Title&quot;:&quot;Unauthorized&quot;,&quot;Status&quot;:401,&quot;Detail&quot;:&quot;TokenExpired: token expired at 10/31/2023 09:07:58&quot;,&quot;Instance&quot;:&quot;07945af1-92e9-45d7-9b7f-91949c3bc583&quot;,&quot;Extensions&quot;:{}}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Name</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>case randomblob(100000) when not null then 1 else 1 end </code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [359] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [755] milliseconds, when the original unmodified query with value [Test Account YP] took [313] milliseconds.</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place. </p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by &#39;?&#39;</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use &#39;exec&#39;, &#39;exec immediate&#39;, or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an &#39;allow list&#39; of allowed characters, or a &#39;deny list&#39; of disallowed characters in user input.</p>
+
+<p>Apply the privilege of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the &#39;sa&#39; or &#39;db-owner&#39; database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				
+				
+				
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://identity.xero.com/.hg</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1665 bytes)</summary>
+				
+				<pre><code>GET https://identity.xero.com/.hg HTTP/1.1
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: e96d006a-ec0b-4035-95dc-ee83f9bfca46
+Host: identity.xero.com
+Connection: keep-alive
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (443 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://login.xero.com/identity/user/login
+Expires: Tue, 31 Oct 2023 10:07:38 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 10:07:38 GMT
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=1
+Server-Timing: ak_p; desc=&quot;1698746858196_389084199_131797746_1436_9070_54_0_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 301 Moved Permanently</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>_abck</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: _abck</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Cookie Without Secure Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>ak_bmsc</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: ak_bmsc</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>_abck</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: _abck</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1746 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: e96d006a-ec0b-4035-95dc-ee83f9bfca46
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=KjG4h1SDEpBtkweN5JLd--mPPfhEfBtgUYnuyi9-VMA&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 5dc8b1765a8442beb7dba844e9e95f6e
+Xero-Message-Id: 240b27e205f7413da01f4c6ee1727c54
+Xero-Activity-Id: 29a363b2bd8d4e04bc11ea91eea5a6e2
+Xero-Correlation-Id: 0b8d828fbd704e91b6ee704b6b02e24b
+Expires: Tue, 31 Oct 2023 08:37:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:58 GMT
+Content-Length: 2927
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=243
+Server-Timing: origin; dur=53
+Set-Cookie: bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQZ5YRYENzs36LAQAAj+XhhBVEdAlH6bURcb71MvQMy2O9Yl+0YgRI0Sfu3t6O8ZynvqQO8gXi06O9uf/bI3XSDrs11lBqj9XjnELLEnSuf0EaCr8+lMB7FoYaZnkdcT9JxZvnSEvh68hVP1RygNH3jeeooIPskcA0d4rd2wUApRyETayXuoTmR5Rrsqb/MbmpgPOa5M3uaCSTwFT89RWBAOGXRljPN/rIzWXn8Ku1+gUxqbtWCbS6zfTm5Q==~1; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:58 GMT; Max-Age=7200; Secure
+Server-Timing: ak_p; desc=&quot;1698741478475_1611765351_178109556_29585_6255_27_18_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2927 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MTc3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk4NzQxNDc4LCJhdF9oYXNoIjoiWngtZGE3Z0tMZ3lCWUNkVXhHY0lNZyIsInNfaGFzaCI6InBtV2tXU0JDTDUxQmZraG43OXhQdUEiLCJzaWQiOiIzMDdkNTY2OWMyMGE0N2QxODVlZjQyMTg1NmExMzA3NCIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk4NzM0MDE1LCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJyYWplc2hAa2FuZGlzYXRlY2guY29tIiwiZW1haWwiOiJyYWplc2hAa2FuZGlzYXRlY2guY29tIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImZhbWlseV9uYW1lIjoiU2hhaCIsIm5hbWUiOiJSYWplc2ggU2hhaCIsImFtciI6WyJwd2QiXX0.NwskUxgse7wWUjSe07XBT4Y_efvC2ttrD4apSfLfjqzXyXCj1TEisGAUT1C-XL7neik7W01RwiaHgQ2DuCITENdbtO8ZRkUuXcew92oHZfrj9Gu1jTJFYt5D2XKqttCR5r_5d0pZxZeHpKoESTTTd364LpoThcC0FCm_tYW56xgqojFOvocyksPHzOJm8IFcmFDonl4DXycEpm2E1wIt4QnJJVuVT3cEY0fZ2hcC3n3pcg3bzvRTAR3TLU3z55APFMeB6CXasbpz8TZRx5mZvMZ-8qPgk3ImbJB0HQCyydjRTEO_1IPV0XfxOfn9XqbZ-SHcm_OrN6FC5iviOZd8PQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MzI3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5ODczNDAxNSwieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjMwN2Q1NjY5YzIwYTQ3ZDE4NWVmNDIxODU2YTEzMDc0Iiwic2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJqdGkiOiJDQzRDOUEwMTNCMDQ3M0Y5RUYxNTg5MjZCM0ZGOEY3RiIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiMTdmZWJkMDctNDEwMC00YjJmLTg3MjUtNDJjNmFkZGVhM2I5Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.o18l1yd29E39dHhHMULkdhy1JPb3UJTMy5mP39skUgT6dLMykKNBo72JvCL4v8mt6YoI2Zn5luOkMHkgcsrn423uv70VUm5kb7G68yo1h1SEp6OMavuND0pOQHeA2wm40Fh359E4gwzjYOr61DIuiEgZm_fTfYCcFC8ol252h0v739t1gxUXKIwcsjC4y__J9tq3YkeG5v3j4xKG2cAn_nQHJ5VrmSgKl40VJhOZ9HvnPABxXhb3iiWVtZXlmIG2BZBCASNQN6YTruK_W_u9ArHmG-PgdhtsuGFKgpTdzDyt5cwP6mB1pSRT2kMwZ3dSL3Ae10B7oORlKgnTchCD9g&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;kp4DgRcQ8_PgwvlsQp2ps1q6fXyWsEqLjHI8ucnzeYE&quot;,&quot;scope&quot;:&quot;openid profile email accounting.transactions accounting.settings accounting.contacts accounting.attachments files assets projects offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Timestamp Disclosure - Unix</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A timestamp was disclosed by the application/web server - Unix</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>1689318352, which evaluates to: 2023-07-14 12:35:52</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>1689318352</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://api.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">PUT https://api.xero.com/api.xro/2.0/Currencies</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details>
+				<summary>Request line and header section (3336 bytes)</summary>
+				
+				<pre><code>PUT https://api.xero.com/api.xro/2.0/Currencies HTTP/1.1
+xero-tenant-id: f0fa46f6-5752-46ee-a06a-86bc8cd757fe
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MzI3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5ODczNDAxNSwieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjMwN2Q1NjY5YzIwYTQ3ZDE4NWVmNDIxODU2YTEzMDc0Iiwic2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJqdGkiOiJDQzRDOUEwMTNCMDQ3M0Y5RUYxNTg5MjZCM0ZGOEY3RiIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiMTdmZWJkMDctNDEwMC00YjJmLTg3MjUtNDJjNmFkZGVhM2I5Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.o18l1yd29E39dHhHMULkdhy1JPb3UJTMy5mP39skUgT6dLMykKNBo72JvCL4v8mt6YoI2Zn5luOkMHkgcsrn423uv70VUm5kb7G68yo1h1SEp6OMavuND0pOQHeA2wm40Fh359E4gwzjYOr61DIuiEgZm_fTfYCcFC8ol252h0v739t1gxUXKIwcsjC4y__J9tq3YkeG5v3j4xKG2cAn_nQHJ5VrmSgKl40VJhOZ9HvnPABxXhb3iiWVtZXlmIG2BZBCASNQN6YTruK_W_u9ArHmG-PgdhtsuGFKgpTdzDyt5cwP6mB1pSRT2kMwZ3dSL3Ae10B7oORlKgnTchCD9g
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Postman-Token: 4a3cf81e-85a2-4df7-8113-79537e86af00
+Host: api.xero.com
+Connection: keep-alive
+Content-Length: 62
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQBfQwF2JV5muLAQAAHCnlhBW2HYszMbje6YmSBhSycAM/uhAteDT00tPEgFHp+zPpBKkOHDNOW/L9jQx9YrVk6nl8dUSgOQ8Y3rgaaJpSeAcpu0OYqFU61N7qPRAkj648pplvcSjsa9T9IXbiOySziPgIAEXYXvtzMmVZca4dhxMIjmg9+sL0pxGQqeyomtbAS/USpSuxXKzXp8admXFfXmdZHK9ywcv8V3+eBz/r1Gs1ZCgFIgwOk4OQCjc=~1; bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (62 bytes)</summary>
+				
+				<pre><code>{
+    &quot;Code&quot;: &quot;CAD&quot;,
+    &quot;Description&quot;: &quot;Canadian Dollar&quot;
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1293 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Content-Length: 177
+Server: nginx
+WWW-Authenticate: Bearer error=invalid_token
+Xero-Correlation-Id: 8397631f-3c8a-4a5d-86a2-132017765ccb
+Expires: Tue, 31 Oct 2023 09:42:54 GMT
+Date: Tue, 31 Oct 2023 09:42:54 GMT
+Connection: close
+X-Client-TLS-ver: tls1.3
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQ5f3UF+zcZ2uLAQAAPFUdhRWX9TcbqvjO3gQrIIM5+CaSp9Kw+xTHlTlhbnSbHiwMX5P2YGb7q8WnqjJChz7w6wQ1LG/Z7zJjab15kAuw8IIqKI9m8bLyN0zmtd42GDL0fyxSDNVpq82gkhqm6phLSbhzfSEqt5V8hbKt0TBrrfWh1DsHMDbhfDv+MUuMJlS+aqzt9rbG1NQhQECu4GcZcgsL8tfB6/NfPNuxg9lT5HMo28SrKnSwia9JFOCLnxs7YPMZ80CEhwvkMBROyQ/q5HbMIj7LPjRNwuxQQvhSvOmNDoJhEA2s7iIaYqTgyITXxvEzKz5dWeUxTj3wk7H9TodoYRND9M8vRKPQhowGS/DTP+fAMcKSM2xlJ0Gtb6ZM8ZX4C8In; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=3262; HttpOnly
+Set-Cookie: bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQ5f3UF+3cZ2uLAQAAPFUdhRWqsgjhv2/roqWdiD/srJXxKXSjmFpETOy+DC8BWtRsr+vh3b1JG5vYhJ2mUAPod3Uarj9G+D/X9QVydJM28mqjuxWJxC/e7Qi0D00E2Tx2j3TXmnOAtOWobrZr45/LknEDUTWs4hbJH31Bznm74YqMKd5D0BTeZY1at6OZPBvNqEkMtHwJ3fkwLMDwn5XXONmwvpt7aZ/+/VIzlU6P6xjdJAACr8qIoMkyC54=~1; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:58 GMT; Max-Age=3304; Secure
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (177 bytes)</summary>
+				
+				<pre><code>{&quot;Type&quot;:null,&quot;Title&quot;:&quot;Unauthorized&quot;,&quot;Status&quot;:401,&quot;Detail&quot;:&quot;TokenExpired: token expired at 10/31/2023 09:07:58&quot;,&quot;Instance&quot;:&quot;8397631f-3c8a-4a5d-86a2-132017765ccb&quot;,&quot;Extensions&quot;:{}}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>identity.xero.com</p>
+
+<p>_abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352</p>
+
+<p>ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==</p>
+
+<p>bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (935 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6dDBuNUF3aWpTWXJJQ2dMaEkwdDRrZ0RDSTEtdHBVdUl1SktyQUNPYTFuVzUta2wy
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 9a32050a-6d27-48a1-93c8-0d7ab06dfc6c
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQPvQwF0F1036LAQAAxGncgAre3kBJKwcpJpi+JtQjUFQNofvLFXBi+kvnqsCfoiFtF9t0Fs1f4r0v4DBc7gbGVJ/atZD4Mm7/xiOSxZyO7k8C+vQ9QdNU7FioFUIr5fU/dWMn//C6ege1NdB6N+X2671LWNcPsu57JNga881tIjHjC12p0qgEvfxxfBDeTplQIHR46B9O+aHVQ9dCRoTx4EDPuAa0vMYjhyiFikW0ARwtQPkJ381ZLqJYSi6R23coOCUUiCl7reKhuz3GGEwxixgFB4bup675Hg7Ggb0TQIbyDGWGMrEDXbsKMP+cqB2jcQI1TOz/MXv0C8lgQCMrkWwfrQI+re6PtZbrI/sdXvYuhCQ3SbUaq2pjgkOS5/sj8zw=~-1~-1~1689318352; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=kPUPqv8ig1UFHxrmqd-6yD0z5wqyzW_U3ECfAkaCAWE&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details>
+				<summary>Status line and header section (2264 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 8bb160c7663d41f682dfc50c0c8854df
+Xero-Message-Id: c482307df724499ba7a75f601faa4d41
+Xero-Activity-Id: 1ff8e2770ed54c98ba0340563686bc02
+Xero-Correlation-Id: f597c42a884342cd8d1e653aaf241e71
+Content-Length: 26
+Expires: Tue, 31 Oct 2023 08:37:16 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:16 GMT
+Connection: close
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=249
+Server-Timing: origin; dur=26
+Set-Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; Domain=.xero.com; Path=/; Expires=Wed, 30 Oct 2024 08:37:16 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:16 GMT; Max-Age=7200; HttpOnly
+Set-Cookie: bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 12:37:16 GMT; Max-Age=14400
+Server-Timing: ak_p; desc=&quot;1698741436141_1611765358_841435688_27555_8440_25_32_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (26 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;invalid_client&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1746 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: e96d006a-ec0b-4035-95dc-ee83f9bfca46
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 136
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQbpYRYB2CCmaLAQAAKkDhhAoUm1e22dYxrP7hbnXSAw7ZNwqmVXW1pzETa1QaPqNOgnLsleFtsWL75jcYKsUO23sHB8J2OQPPilHzAEJ7irqJ17+thWKiL/KAa2TZbYCocmBJ5oKf12iGJv7bQg5bWuk99bfgXpDqdX9gsWeubzFIuWpSGaYifLutompgepX3eBhCfjC+yh4EJpRrnyuu4SknjdFujAaxbFp68FVgeh3K1xVP18klztz4sevD0vNlep68fwnR8CuTyhwwrA/2fK+KfxH9/Xk+0KRRbcV9JWZKviJWl0UmKf0vU3FhBzJUTMPxhaz7U1KBq3mSy9hRETEdTe4a+GpJzBQFPRT3JuAKl9xEDvSyh+6flhGTRNlpDWU=~-1~-1~1689318352; ak_bmsc=E1EA39B01C2F3C5CDCFA212FE2AACF46~000000000000000000000000000000~YAAQbpYRYB6CCmaLAQAAKkDhhBXOmf4FpVIfMsSsLbgplHKvkzSlsaK+h5M0BBqO0iM/12nfOADniJ2N+vgOgODaUMETi9PfokdyOJYsEx9BT5UXv4sEn5/7cICxT4gCq/12t+en1KQ8gzlGT7S3bypp94BP096t6vE1LwuBEZGyU4nafxO5pwQkaNuFj/CAZnj5jt9LQs2kUutGcf/V9a4gRokfNXGQfu9+VBvTgIXxfGa0+hfjFy6AYNk1Qwyt/hnX3DvXgcFKB4r/e2ee8dSjOsuDKWFL11y9gc3cU/ZpAbBxz5uoxhDYv2hsDnfqBpT/eqEV4dqgdXvI74UUkhhbUmd9+wF88ji2iiXdDBWQf0qwkVP0Y3OHDg==; bm_sz=266199AD342C3FC68297912CBB8F0E28~YAAQbpYRYB+CCmaLAQAAKkDhhBVlIJrS22qwqg0xHzEbbhgTVUCEoa4O+qvW8OKk4pIjryhjyHFdH34eu3BuqOwieW+QVfKuKoPC/MzCmXPKVb/dRqceiAQJgZisPQFcIjl4kzGCRc1yLLbqxs22aJns5cvHm1Po2zK5WIHHR6uOdsRKqa+mWPbTIf/CDXcwD9PbS4mOmTxvQg99mEiOKs06xNMh1pJF6+3F1YkXQgJI3Rox8MqSTZTxxZWcOwiP1xCh6ZbDg9pxxz97adTbvxTzb1Rwrkm+HUM/GkLabrP7~4272440~3420996; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (136 bytes)</summary>
+				
+				<pre><code>grant_type=authorization_code&amp;code=KjG4h1SDEpBtkweN5JLd--mPPfhEfBtgUYnuyi9-VMA&amp;redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 5dc8b1765a8442beb7dba844e9e95f6e
+Xero-Message-Id: 240b27e205f7413da01f4c6ee1727c54
+Xero-Activity-Id: 29a363b2bd8d4e04bc11ea91eea5a6e2
+Xero-Correlation-Id: 0b8d828fbd704e91b6ee704b6b02e24b
+Expires: Tue, 31 Oct 2023 08:37:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Oct 2023 08:37:58 GMT
+Content-Length: 2927
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=243
+Server-Timing: origin; dur=53
+Set-Cookie: bm_sv=E5C6BF376412E4FAA0F028B9981606C2~YAAQZ5YRYENzs36LAQAAj+XhhBVEdAlH6bURcb71MvQMy2O9Yl+0YgRI0Sfu3t6O8ZynvqQO8gXi06O9uf/bI3XSDrs11lBqj9XjnELLEnSuf0EaCr8+lMB7FoYaZnkdcT9JxZvnSEvh68hVP1RygNH3jeeooIPskcA0d4rd2wUApRyETayXuoTmR5Rrsqb/MbmpgPOa5M3uaCSTwFT89RWBAOGXRljPN/rIzWXn8Ku1+gUxqbtWCbS6zfTm5Q==~1; Domain=.xero.com; Path=/; Expires=Tue, 31 Oct 2023 10:37:58 GMT; Max-Age=7200; Secure
+Server-Timing: ak_p; desc=&quot;1698741478475_1611765351_178109556_29585_6255_27_18_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2927 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MTc3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk4NzQxNDc4LCJhdF9oYXNoIjoiWngtZGE3Z0tMZ3lCWUNkVXhHY0lNZyIsInNfaGFzaCI6InBtV2tXU0JDTDUxQmZraG43OXhQdUEiLCJzaWQiOiIzMDdkNTY2OWMyMGE0N2QxODVlZjQyMTg1NmExMzA3NCIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk4NzM0MDE1LCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJyYWplc2hAa2FuZGlzYXRlY2guY29tIiwiZW1haWwiOiJyYWplc2hAa2FuZGlzYXRlY2guY29tIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImZhbWlseV9uYW1lIjoiU2hhaCIsIm5hbWUiOiJSYWplc2ggU2hhaCIsImFtciI6WyJwd2QiXX0.NwskUxgse7wWUjSe07XBT4Y_efvC2ttrD4apSfLfjqzXyXCj1TEisGAUT1C-XL7neik7W01RwiaHgQ2DuCITENdbtO8ZRkUuXcew92oHZfrj9Gu1jTJFYt5D2XKqttCR5r_5d0pZxZeHpKoESTTTd364LpoThcC0FCm_tYW56xgqojFOvocyksPHzOJm8IFcmFDonl4DXycEpm2E1wIt4QnJJVuVT3cEY0fZ2hcC3n3pcg3bzvRTAR3TLU3z55APFMeB6CXasbpz8TZRx5mZvMZ-8qPgk3ImbJB0HQCyydjRTEO_1IPV0XfxOfn9XqbZ-SHcm_OrN6FC5iviOZd8PQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTg3NDE0NzgsImV4cCI6MTY5ODc0MzI3OCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5ODczNDAxNSwieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjMwN2Q1NjY5YzIwYTQ3ZDE4NWVmNDIxODU2YTEzMDc0Iiwic2lkIjoiMzA3ZDU2NjljMjBhNDdkMTg1ZWY0MjE4NTZhMTMwNzQiLCJqdGkiOiJDQzRDOUEwMTNCMDQ3M0Y5RUYxNTg5MjZCM0ZGOEY3RiIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiMTdmZWJkMDctNDEwMC00YjJmLTg3MjUtNDJjNmFkZGVhM2I5Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.o18l1yd29E39dHhHMULkdhy1JPb3UJTMy5mP39skUgT6dLMykKNBo72JvCL4v8mt6YoI2Zn5luOkMHkgcsrn423uv70VUm5kb7G68yo1h1SEp6OMavuND0pOQHeA2wm40Fh359E4gwzjYOr61DIuiEgZm_fTfYCcFC8ol252h0v739t1gxUXKIwcsjC4y__J9tq3YkeG5v3j4xKG2cAn_nQHJ5VrmSgKl40VJhOZ9HvnPABxXhb3iiWVtZXlmIG2BZBCASNQN6YTruK_W_u9ArHmG-PgdhtsuGFKgpTdzDyt5cwP6mB1pSRT2kMwZ3dSL3Ae10B7oORlKgnTchCD9g&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;kp4DgRcQ8_PgwvlsQp2ps1q6fXyWsEqLjHI8ucnzeYE&quot;,&quot;scope&quot;:&quot;openid profile email accounting.transactions accounting.settings accounting.contacts accounting.attachments files assets projects offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Cache-Control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>max-age=0, no-cache, no-store</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>SQL Injection - SQLite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40024/">SQL Injection - SQLite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Cookie Without Secure Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10011/">Cookie Without Secure Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/614.html">614</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Timestamp Disclosure - Unix</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10096/">Timestamp Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
