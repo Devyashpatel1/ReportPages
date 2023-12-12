@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report for Identify</title>
+<link
+	href="2023-11-13-ZAP-Report-2/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2023-11-13-ZAP-Report-2/themes/original/main.css" rel="stylesheet">
+<link
+	href="2023-11-13-ZAP-Report-2/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report for Identify</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2023-11-13-ZAP-Report-2/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Mon 13 Nov 2023, at 11:21:51</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://identity.xero.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						<span>None</span>
+						
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%">
+						<col style="width: 11.666666666666666%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="6">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">False Positive</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://identity.xero.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(6)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>6</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>bm_sv</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: bm_sv</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>bm_sv</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: bm_sv</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://identity.xero.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>identity.xero.com</p>
+
+<p>bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST https://identity.xero.com/connect/token</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (2044 bytes)</summary>
+				
+				<pre><code>POST https://identity.xero.com/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic ODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTA6LTNLcFpJMFNrc2NhSDdmNXBGVWJiM21YRkZlX3M1M1lEd2U3TU9ocHhTZmtwcWF2
+User-Agent: PostmanRuntime/7.34.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 55c61543-092c-4db6-8eba-8bc418ee7cb1
+Host: identity.xero.com
+Connection: keep-alive
+Content-Length: 82
+Cookie: _abck=27963D1E0A680549BF31D5EDC71CCBFD~-1~YAAQJ/QwF1BEbamLAQAA/d03xwottJh6X1pkOqX2QmNOKeSxNP1BT9wmUGAlEXd4dXFpXimD4Es3C65nlPmvAXWg1j3KXC2QI9+io4bkLefnfrRixXz9sUDGzf4pBP/2g3Oo7wSYRaBHmRkfN7BvuyI6mqgAYpqiXyKrRh0lj+u3oC97kqcdKDHkwQvxqcVNkFdd3iciB8cGA2qH0IpX95+h0DSZKCfEm0fyny8KgrqV0fBJSDydTBM7418VcxDF5TyUpcXK45UMfuMwtQtlMJ8oL0XLfkduhS04nYnu2p6YKwlM43KDA2/IX1j5l/2RR6IcVM5LIICXhbtYAStoR9DWoYmfebhLMbxl7aRvsGR1O7JxYptlEcfnrFROm5di5mCpOg8=~-1~-1~1689318352; ak_bmsc=4961B2DC71118A08D62D1FFFEB5C0132~000000000000000000000000000000~YAAQJ/QwF1FEbamLAQAA/d03xxVIrS8T9aI2SlLL43Kz52I4rrUd+a2SLcfI/gahrSSNyTVhSq8YPCBDjX4Ofl6Zz+ZYHUEebiEUOeB2aah26gD96IqWcFcymoIL38pCS+yBCvyXJmK4pMEQm/0kLdLjBHG7nL+7Pz2JvoK+1DaoscbMIHoXhpX4EEhgkxRlj+9gV5Uf8ItgZtMGKAX1BrHnv9cGgKVmG8GKDVGkjnoYMDki3fDvNbtpZoJKPsHEb9EOzOimt1KBuWQpMS3McCH6xq9qc1wgERNh3uWoKs0eKxorWr+oEofgdisJ3dbtU/uZVEJ8z1fOqqNrAlUJ9jXltTmxTy99nv4vWU+X4WdXy0Rv2Gtu6GRrkg==; bm_sv=C52A430116864290059B639FDC92496D~YAAQ7/3UF0e+h6mLAQAAV1Y7xxWUt9kn8guFfGPQ63NNCzis2z5XIzosGX3Pxq+tZ0WHtFvidyMjBxyKbXSvPev0U65KigoNkKmYE9EqJMFOtG0VlgXsfXZH+PrB90mnWL3aW9XRS1lQyc8Q66d/bCvNDOBJ54AnXidYYdENLgq3tttLvA4KukxWBYufe+Ml4V7dqiYKUV0fYB+w7wQUWftBJMXmNngvtlPVihlpvUp4PDyoVRl/tmNBrIQjFA==~1; bm_sz=D51598F10D1B9CD88D7576B754CDA3A7~YAAQJ/QwF1JEbamLAQAA/d03xxW4ihHMYLaxzrj8NMYYRbwBlFWwcP0Y1QN5oWa2QQIFLicWVXaEJAoME5jRMrWhYLsYU0lqlsY0sbvXZI/6bA/nzPMIbDhcmOqHy7dEVag9QL+1F5Z4c8QIeWCCIR+e9JdN0cparDqLqfyr30dCY+txOzU35/2DUWsYWre/AJIiXKalhKHEYjy0AYFUgnJLJAFjTQohbRuU7uj/MY4p+cMThAWLs0JbQGqXKXHn0qK1TPgFFzuVAany+REX05CBakKoKz95qgBZ8xiotsZ9~3622192~3224886; Device=dca0caa2ed4e43238bcd6f76a000a0c7
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (82 bytes)</summary>
+				
+				<pre><code>refresh_token=Bbiyhb9VFA71mvgB_g5NYVcRk5DkjLgQjjXqqTBo7k8&amp;grant_type=refresh_token</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1100 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Server: nginx
+Xero-Origin-Id: IdentityServer.Web
+Xero-Causation-Id: 445282a043254723b82a0ab0c134baf8
+Xero-Message-Id: 0ce13857771c4d8b918b87b790a31758
+Xero-Activity-Id: 74b7dff0a21f4497bdd68a73ab1ff299
+Xero-Correlation-Id: fb371f2a69c941838b077720dd7f0cba
+Expires: Mon, 13 Nov 2023 05:50:50 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 13 Nov 2023 05:50:50 GMT
+Content-Length: 2882
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=360
+Server-Timing: origin; dur=149
+Set-Cookie: bm_sv=C52A430116864290059B639FDC92496D~YAAQJ/QwF1hQbamLAQAAMI47xxW7l1ys3L2fVmvs30ltEVwzfDDO+BowUWQzs8INF2o3FVLOnfkiVGla0NIhCnPmt2RCraoUYXHdorc8p2O/ORMbbUeBNHWGXBcVWDHUaln12ybQrhvq8vryCH8pB9Ov15RlHCq38xWoAg0lWXy14Zw0j6aputMKreWiFBggk+aOEEdPkwyZgQWFdGgoLwTgHA7TXe3ZaWf2GzhQhuV8gbZgSitqyOf76aC8Vg==~1; Domain=.xero.com; Path=/; Expires=Mon, 13 Nov 2023 07:50:36 GMT; Max-Age=7186; Secure
+Server-Timing: ak_p; desc=&quot;1699854650326_389084199_412591292_50916_5787_60_79_-&quot;;dur=1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2882 bytes)</summary>
+				
+				<pre><code>{&quot;id_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NDk1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Ijg1NkM2NkUzQzE2QjQxRUJCMkZGOTkzNkUyQjFDMUUwIiwiaWF0IjoxNjk5ODU0NjUwLCJhdF9oYXNoIjoiemN5cUlWWjJJVE1zSVlXU2VkWlJNUSIsInN1YiI6IjI5NTgzNzhkZDI1OTUzMmVhN2FmNGM1ZjIzY2JlYmEwIiwiYXV0aF90aW1lIjoxNjk5NjAwOTIzLCJ4ZXJvX3VzZXJpZCI6IjBlMTgwYjNkLTMyZmMtNDFlNS1hMTI3LTg2NjEzODA0ZjQzNCIsImdsb2JhbF9zZXNzaW9uX2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJzaWQiOiI1NDVhMWUyYWJjMTc0MTc4YWViMzQ3ZjczYzY3YTY1OCIsInByZWZlcnJlZF91c2VybmFtZSI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJlbWFpbCI6InJhamVzaEBrYW5kaXNhdGVjaC5jb20iLCJnaXZlbl9uYW1lIjoiUmFqZXNoIiwiZmFtaWx5X25hbWUiOiJTaGFoIiwibmFtZSI6IlJhamVzaCBTaGFoIiwiYW1yIjpbInB3ZCJdfQ.M_R7lyG3LcPfvDxPzafIdCyDGE2ROvMffneGgfHKt-jXOPdqmLAFtdTjSFgxdEf7E9MHH07sONV4mfvdEqF7YzssbiMSSgurziHZHA8NtDJACnohmKE_RTYFabvFkNVHp21ajuzNFZMn7MV1JvoylXgh4Skpsr70qH3DsIdqQ8StN01MFWCvbx3pBpAKo1y5ChZMoVLrE2VvEmJRSSzeaCBqAMTIh4dnqQKGW9E5dPLWq8r9TWpa-qiubQX4lqxQkbyGhmsShjhEXEahyJsFP2DtYwIIluwR3O2r8cpcjzUnNkvZ_aWzacsKmkS-quuUYHFZIWHVgu1fB7oS6RdAfQ&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE2OTk4NTQ2NTAsImV4cCI6MTY5OTg1NjQ1MCwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiODU2QzY2RTNDMTZCNDFFQkIyRkY5OTM2RTJCMUMxRTAiLCJzdWIiOiIyOTU4Mzc4ZGQyNTk1MzJlYTdhZjRjNWYyM2NiZWJhMCIsImF1dGhfdGltZSI6MTY5OTYwMDkyMywieGVyb191c2VyaWQiOiIwZTE4MGIzZC0zMmZjLTQxZTUtYTEyNy04NjYxMzgwNGY0MzQiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjU0NWExZTJhYmMxNzQxNzhhZWIzNDdmNzNjNjdhNjU4Iiwic2lkIjoiNTQ1YTFlMmFiYzE3NDE3OGFlYjM0N2Y3M2M2N2E2NTgiLCJqdGkiOiJCQjY2NTQyNjMyRkUwNTBEQ0I5ODI3RTlBM0EyNjdCNCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiYTRhNmE2MWMtOTA2NC00YzMwLWE4NGQtOGMzMGM5NTRjYzhiIiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiZmlsZXMiLCJwcm9qZWN0cyIsImFjY291bnRpbmcuc2V0dGluZ3MiLCJhY2NvdW50aW5nLmF0dGFjaG1lbnRzIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJhc3NldHMiLCJhY2NvdW50aW5nLmNvbnRhY3RzIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.bLq-pi9aX9ME7sAMFVbjKZ_BIXEW30WzYTvHl7stU2MYB8c88BiH8AElWwbsgBMM6b7D0zXZmin6Cj-WZj6zGaxa-G8o5_WzfMUlqNkaHZC3OAjMIFrYY6MzBgOXbhDO6ZRRMALRK58BDlL_2ZxrSFqjYjFHa8wcv7BGKORcrUSkoCAgxn9fOw0p6T33OnRbcoJhUHubuKfuUABrx4-1cEV5de47oDOJzLUZMC9DWmoBK6F12LjLBDnidO10AzJ4Zf5eDaPdmB2BaQypUmppBqfEpJ9ORlmgN4PVKLMxFtU6MxnbZLYJ4yTAhM9ou9p47Xbif8UpYaYET6Mvp72nqg&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;refresh_token&quot;:&quot;YZi--US2YTWt9Nn4ZzVF-YBotLIdOWdK5eOcZt3_PjU&quot;,&quot;scope&quot;:&quot;email profile openid files projects accounting.settings accounting.attachments accounting.transactions assets accounting.contacts offline_access&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Cache-Control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>max-age=0, no-cache, no-store</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
